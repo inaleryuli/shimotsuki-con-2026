@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071c1c">
+  <meta name="description" content="霜月式・淬鏡 ShimotsukiCon · Saikyou — 香港大學動漫聯盟綜合同人祭。穿越鏡面，映照創作的萬千光芒。">
+  <title>霜月式・淬鏡 | ShimotsukiCon 2026</title>
+  <link rel="icon" href="assets/mirror.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="assets/fonts/jf-openhuninn-2.1.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="revision.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <div id="intro" class="intro" aria-hidden="true">
+    <div class="intro-haze"></div>
+    <div class="intro-aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="intro-world" aria-hidden="true"><div class="summon-ring ring-outer"></div><div class="summon-ring ring-inner"></div><div class="intro-character"><img src="assets/heikiru-poster.png" alt=""></div><div class="portal-core"></div><span class="intro-rune rune-one">✧</span><span class="intro-rune rune-two">✦</span></div>
+    <div id="intro-dust" class="intro-dust" aria-hidden="true"></div><div id="shards" class="shards"></div>
+    <svg class="cracks" viewBox="0 0 1440 1000" preserveAspectRatio="none"><g id="crack-lines"></g></svg>
+    <div class="intro-copy"><span class="little-star">✧</span><span>鏡界，連接中…</span><small>SHIMOTSUKICON · SAIKYOU</small></div>
+    <div class="intro-progress" aria-hidden="true"><span></span></div>
+    <button id="skip-intro" class="intro-skip" tabindex="-1">略過動畫 <span>↗</span></button>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="#" aria-label="霜月式・淬鏡 首頁"><svg viewBox="0 0 42 48" aria-hidden="true"><path d="M21 2 39 13v22L21 46 3 35V13Z M21 8l12 8v16L21 40 9 32V16Z M21 2v46M3 13l36 22M39 13 3 35"/></svg><span>霜月式<span class="brand-en">SHIMOTSUKICON 2026</span></span></a>
+    <nav class="nav" aria-label="主要導覽"><a href="#story">角色 & 主視覺</a><a href="#experience">活動一覽</a><a href="#visit">活動資訊</a></nav>
+    <div class="header-actions"><button id="motion-toggle" class="motion-toggle" aria-pressed="true" aria-label="關閉動態效果"><span class="motion-dot"></span><span class="motion-label">動態 ON</span></button><a class="nav-cta" href="#visit">活動資訊 <span>↗</span></a><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="開啟導覽"><span></span><span></span></button></div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="行動版導覽" hidden><a href="#story">角色 & 主視覺</a><a href="#experience">活動一覽</a><a href="#visit">活動資訊</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div><div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
+      <div class="hero-watermark" aria-hidden="true">鏡</div>
+      <div class="ambient-shards" aria-hidden="true"><i class="fragment f1"></i><i class="fragment f2"></i><i class="fragment f3"></i><i class="fragment f4"></i><i class="fragment f5"></i><i class="fragment f6"></i></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="tiny-diamond"></span> 香港大學動漫聯盟 · 綜合同人祭</div>
+        <div class="edition-label">SHIMOTSUKICON <span> / </span> 2026</div>
+        <h1 id="hero-title"><span class="title-prefix">霜月式 <span>·</span></span><span class="title-main">淬<span>鏡</span></span><span class="title-roman">S A I K Y O U</span></h1>
+        <p class="hero-tagline">一起穿越鏡界！<span aria-hidden="true">✧</span></p>
+        <p class="hero-description">同人・舞臺・Cosplay</p>
+        <div class="hero-buttons"><a class="button primary" href="#experience">活動一覽 <span>↗</span></a><button class="button text-button" id="replay"><span class="replay-icon">↺</span> 重播開場</button></div>
+      </div>
+      <div class="hero-art" id="hero-art">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="portal-outline" aria-hidden="true"></div>
+        <div class="mirror-portal"><div class="portrait"><img src="assets/heikiru-poster.png" alt="Heikiru，青綠長髮的異世界女神，於碎鏡與流光之間伸出手" fetchpriority="high" id="hero-image"></div><div class="mirror-sheen" aria-hidden="true"></div><span class="portal-star star-top" aria-hidden="true">✦</span></div>
+        <div class="portrait-caption"><span class="caption-rule"></span><div><strong>Heikiru <span>鏡界來客 ✧</span></strong></div></div>
+        <span class="art-coordinate" aria-hidden="true">REFLECTION NO. 01 — HKU ACA</span><span class="floating-star" aria-hidden="true">✧</span>
+      </div>
+      <a href="#event-strip" class="scroll-cue"><span>往下看看</span><span class="scroll-line"></span><small>SCROLL ↓</small></a>
+      <span class="hero-side-label" aria-hidden="true">A WORLD REFLECTED IN YOU.</span>
+    </section>
+
+    <section class="event-strip" id="event-strip" aria-label="活動概要"><div class="strip-item"><span class="micro-label">01 / DATE</span><strong>2026.11.15 <small>SUN</small></strong></div><div class="strip-item"><span class="micro-label">02 / TIME</span><strong>12:00 — 20:00</strong></div><div class="strip-item strip-location"><span class="micro-label">03 / LOCATION</span><strong>觀塘海濱活動空間 03</strong></div><a href="#visit" class="strip-link" aria-label="查看到訪指南">↗</a></section>
+
+    <section class="story section-shell" id="story" aria-labelledby="story-title">
+      <div class="section-heading"><div><span class="eyebrow">CHARACTERS / VISUALS</span><h2 id="story-title">鏡界來客<span class="heading-spark" aria-hidden="true">✧</span></h2></div><p>兩位異世界女神，透過鏡面降臨。<br>今年，與你一起映照同人創作的光芒。</p></div>
+      <div class="visual-grid">
+        <button class="visual-card character-card" id="character-poster" aria-label="查看 Heikiru 完整海報"><div class="character-crop"><img src="assets/heikiru-poster.png" alt="Heikiru 主視覺插畫" loading="lazy"></div><div class="visual-caption"><strong>Heikiru</strong><span>查看海報 ↗</span></div><span class="art-sticker">鏡界來客 / 01</span></button>
+        <div class="visual-card asset-slot character-slot" role="img" aria-label="預留第二位角色的插畫位置"><span class="slot-corner">02</span><div class="slot-center"><span class="slot-symbol" aria-hidden="true">✧</span><strong>另一位女神…</strong><span>角色插畫待補</span></div><div class="slot-caption">NEXT CHARACTER <span>COMING SOON</span></div></div>
+      </div>
+      <details class="world-note"><summary>「淬鏡」是什麼意思？ <span>＋</span></summary><p>淬治、研磨，讓鏡面重拾光亮。我們希望這面「鏡子」能映照同人文化的五彩光芒；「淬」的水字旁，也呼應今年相聚的觀塘海畔。</p></details>
+    </section>
+
+    <section class="experience section-shell" id="experience" aria-labelledby="experience-title"><div class="section-heading"><div><span class="eyebrow">WHAT'S ON</span><h2 id="experience-title">這次，玩什麼？<span class="heading-spark" aria-hidden="true">✦</span></h2></div><p>陣容 & 詳情，陸續解鎖！</p></div>
+      <div class="experience-grid">
+        <button class="experience-card" data-info="doujin"><div class="asset-slot photo-slot"><span class="slot-corner">01</span><div class="slot-center"><span class="photo-icon" aria-hidden="true">▧</span><span>攤位照片待補</span></div></div><h3>同人攤位 <span>↗</span></h3><span class="card-bottom">參展名單待公布</span></button>
+        <button class="experience-card" data-info="stage"><div class="asset-slot photo-slot"><span class="slot-corner">02</span><div class="slot-center"><span class="photo-icon" aria-hidden="true">▧</span><span>舞臺照片待補</span></div></div><h3>舞臺表演 <span>↗</span></h3><span class="card-bottom">演出陣容待公布</span></button>
+        <button class="experience-card" data-info="cosplay"><div class="asset-slot photo-slot"><span class="slot-corner">03</span><div class="slot-center"><span class="photo-icon" aria-hidden="true">▧</span><span>Cosplay 照片待補</span></div></div><h3>Cosplay <span>↗</span></h3><span class="card-bottom">參加守則待公布</span></button>
+      </div>
+    </section>
+
+    <section class="visit section-shell" id="visit" aria-labelledby="visit-title"><div class="section-heading"><div><span class="eyebrow">EVENT INFO</span><h2 id="visit-title">11 月，觀塘見！</h2></div></div><div class="visit-layout"><div class="asset-slot venue-slot" role="img" aria-label="預留場地照片及交通圖位置"><span class="slot-corner">VENUE</span><div class="slot-center"><span class="slot-symbol" aria-hidden="true">⌖</span><strong>觀塘海畔</strong><span>場地照片 / 交通圖待補</span></div></div><div class="visit-details"><dl><div><dt>日期</dt><dd>2026.11.15 <small>星期日</small></dd></div><div><dt>時間</dt><dd>12:00 — 20:00</dd></div><div><dt>地點</dt><dd>觀塘海濱活動空間 03</dd></div><div><dt>門票</dt><dd>稍後公布</dd></div></dl><p class="provisional">※ 暫依海報資料，最終安排待確認。</p><div class="visit-buttons"><a class="button primary" href="https://www.instagram.com/acahku/" target="_blank" rel="noopener noreferrer">追蹤消息 <span>↗</span></a><button class="button outline-button" id="show-poster">活動海報 <span>↗</span></button></div></div></div></section>
+
+    <section class="faq section-shell" aria-labelledby="faq-title"><div class="faq-title"><span class="eyebrow">Q & A</span><h2 id="faq-title">還想知道？</h2></div><div class="faq-list"><details><summary>門票 / 報名何時開放？<span>+</span></summary><p>日期及報名連結稍後公布，請留意 @acahku。</p></details><details><summary>Cosplay 有什麼安排？<span>+</span></summary><p>更衣設施、攝影及道具守則將於活動前公布。</p></details><details><summary>聯絡主辦<span>+</span></summary><p><a href="https://www.instagram.com/acahku/" target="_blank" rel="noopener noreferrer">Instagram @acahku ↗</a><br><a href="mailto:hkuaca.shimotsukicon@gmail.com">hkuaca.shimotsukicon@gmail.com</a></p></details></div></section>
+  </main>
+  <footer><div><a class="footer-logo" href="#">霜月式 · 淬鏡</a><p>香港大學動漫聯盟<br>The Animation and Comics Association, HKU</p></div><div class="footer-links"><a href="https://www.acabox.studsoc.hku.hk/" target="_blank" rel="noopener noreferrer">ACA 官網 ↗</a><a href="https://www.instagram.com/acahku/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:hkuaca.shimotsukicon@gmail.com">聯絡我們 ↗</a></div><div class="footer-bottom"><span>© 2026 ACA, HKU · SHIMOTSUKICON</span><span>Illustration: <a href="https://www.instagram.com/masii.draws/" target="_blank" rel="noopener noreferrer">@masii.draws</a></span><span class="preview-label">DESIGN PREVIEW · 活動資訊待確認</span></div></footer>
+
+  <dialog id="info-dialog" class="info-dialog"><button class="dialog-close" aria-label="關閉視窗">×</button><span class="eyebrow" id="dialog-label"></span><h2 id="dialog-title"></h2><p id="dialog-description"></p><a class="button primary" href="https://www.instagram.com/acahku/" target="_blank" rel="noopener noreferrer">追蹤 ACA 最新消息 <span>↗</span></a></dialog>
+  <dialog id="poster-dialog" class="poster-dialog" aria-label="活動參考海報"><button class="dialog-close" aria-label="關閉海報">×</button><img src="assets/heikiru-poster.png" alt="霜月式・淬鏡參考海報。2026年11月15日，12:00至20:00，觀塘海濱活動空間03。插畫：@masii.draws。" loading="lazy"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
