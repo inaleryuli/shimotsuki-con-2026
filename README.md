@@ -1,4 +1,4 @@
-# ShimotsukiCon 2026 — 霜月式 · 淬鏡
+# ShimotsukiCon · Saikyou 2026 — 霜月式 · 淬鏡
 
 A single-screen event menu with six separate pages: introduction, stage, map, random play dance, cosplayer rules and FAQ.
 
@@ -6,11 +6,11 @@ Hekiru is the default dark theme. The mode button switches to Nozomi and a brigh
 
 ## Editing
 
-Edit build-pages.cjs and run node build-pages.cjs to regenerate the HTML. The active stylesheet and script are screen.css and screen.js. Image layers are in assets/layers; they are optimized copies of the original supplied artwork. The bundled Huninn font license is in assets/fonts/OFL.txt.
+Edit event-content.cjs for bilingual event information and build-pages.cjs for shared layout, then run node build-pages.cjs to regenerate the HTML. Longer content uses numbered sheets with next/previous controls to keep the site free of page scrolling. The active stylesheet and script are screen.css and screen.js. Image layers are in assets/layers; they are optimized copies of the original supplied artwork. The bundled Huninn font license is in assets/fonts/OFL.txt.
 
 Serve this folder with any static web server. The current local preview is http://localhost:4173/. No package installation or framework build is required.
 
-Unconfirmed details are marked as pending. Date, time and venue currently follow the reference poster.
+Event details, ticket prices, performers and RPD time follow the official sources in SOURCES.md. The cosplay page explicitly identifies its adaptation of the 2025 guidelines; it does not assert that last year's facilities apply to 2026. The venue floor plan still needs an organizer-supplied asset.
 
 ## Version control
 
