@@ -3,7 +3,12 @@ const ig='https://www.instagram.com/acahku/';
 const external=(url,label)=>`<a class="text-link" href="${url}" target="_blank" rel="noopener">${label} ↗</a>`;
 const sheets=items=>items.map((html,i)=>`<section class="content-sheet" data-sheet ${i?'hidden':''}>${html}</section>`).join('');
 const paragraph=text=>`<p>${text}</p>`;
-const facts=en=>`<dl class="event-facts"><div><dt>${en?'Date':'日期'}</dt><dd>${en?'15 Nov 2026 (Sun)':'2026.11.15（日）'}</dd></div><div><dt>${en?'Time':'時間'}</dt><dd>12:00–20:00</dd></div><div><dt>${en?'Venue':'地點'}</dt><dd>${en?'AquaBeat 03, Kwun Tong Promenade':'觀塘海濱活動空間 03'}</dd></div></dl>`;
+const facts=en=>`<dl class="event-facts">
+  <div><dt>${en?'Date':'日期'}</dt><dd>${en?'15 Nov 2026 (Sun)':'2026.11.15（日）'}</dd></div>
+  <div><dt>${en?'Time':'時間'}</dt><dd>12:00–20:00</dd></div>
+  <div><dt>${en?'Venue':'地點'}</dt><dd>${en?'AquaBeat 03, Kwun Tong Promenade':'觀塘海濱活動空間 03'}</dd></div>
+  <div><dt>${en?'Tickets':'門票'}</dt><dd>${en?'HK$50 online · HK$60 on the day':'網上 HK$50 · 即日 HK$60'}</dd></div>
+</dl>${external(ticket,en?'Get tickets':'購票')}`;
 const introZh=[
 '以霜為名，以月為鏡。香港大學動漫聯盟為你呈獻 —— 第十五屆「霜月式」同人祭。',
 '「淬鏡」一詞，指將昏暗的銅鏡燒紅浸入水中，再進行打磨，使其重新明亮照人。本屆霜月式期望延續一貫理念，致力精煉及推廣同人文化，令其映照出閃耀奪目的光芒，展現無盡的可能性。',
