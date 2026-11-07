@@ -5,7 +5,7 @@ const sheets=items=>items.map((html,i)=>`<section class="content-sheet" data-she
 const paragraph=text=>`<p>${text}</p>`;
 const facts=en=>`<dl class="event-facts">
   <div><dt>${en?'Date':'日期'}</dt><dd>${en?'15 Nov 2026 (Sun)':'2026.11.15（日）'}</dd></div>
-  <div><dt>${en?'Time':'時間'}</dt><dd>12:00–20:00</dd></div>
+  <div><dt>${en?'Time':'時間'}</dt><dd>12:00–19:00</dd></div>
   <div><dt>${en?'Venue':'地點'}</dt><dd>${en?'AquaBeat 03, Kwun Tong Promenade':'觀塘海濱活動空間 03'}</dd></div>
   <div><dt>${en?'Tickets':'門票'}</dt><dd>${en?'HK$50 online · HK$60 on the day':'網上 HK$50 · 即日 HK$60'}</dd></div>
 </dl>${external(ticket,en?'Get tickets':'購票')}`;
@@ -33,31 +33,31 @@ const regulations=require('./current-regulations.cjs');
 const rulePages=(en,type='cosplay')=>sheets(regulations[type][en?'en':'zh'].map(([heading,items])=>`<h2>${heading}</h2><ul class="rule-list">${items.map(x=>`<li>${x}</li>`).join('')}</ul>`))+`<p class="source-note">${external(ig+'p/'+(type==='cosplay'?'DfT3xdLD_g8':'DfUMVTpj9ZD')+'/',en?'Official regulations':'官方守則')}</p>`;
 const floorPlan=en=>`<div class="floor-plan-content"><button class="floor-plan-button" data-open-map aria-label="${en?'Enlarge the floor plan':'放大場地平面圖'}"><img src="assets/event/floor-plan.webp" width="1080" height="1350" alt="${en?'Floor plan with booths, entrance, exit, stage and toilets':'場地平面圖：攤位、入口、出口、舞臺及洗手間'}"><span>${en?'Enlarge ＋':'放大查看 ＋'}</span></button><p class="map-address">${en?'AquaBeat 03 · 86 Hoi Bun Road':'觀塘海濱活動空間 03 · 觀塘海濱道 86 號'}</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=AquaBeat+03+86+Hoi+Bun+Road" target="_blank" rel="noopener">${en?'Open location ↗':'查看位置 ↗'}</a></div>`;
 const faqZh=[
- ['何時、在哪裏舉行？','2026年11月15日（日）12:00–20:00，觀塘海濱活動空間03，觀塘海濱道86號。'],
+ ['何時、在哪裏舉行？','2026年11月15日（日）12:00–19:00，觀塘海濱活動空間03，觀塘海濱道86號。'],
  ['門票多少錢？',`網上門票 HK$50；即日門票 HK$60。${external(ticket,'Art-mate 購票')}`],
  ['網上售票何時截止？','11月14日23:59截止。HK$40 早鳥優惠已於10月18日結束。'],
- ['最遲何時入場？','最遲入場時間為19:00，即活動結束前一小時。'],
+ ['最遲何時入場？','現場售票及入場於 18:00 截止，活動於 19:00 結束。'],
  ['不是港大學生也可以參加嗎？','可以。活動歡迎公眾參與。'],
  ['一定要 Cosplay 嗎？','不需要；歡迎以日常服裝到場逛攤位及欣賞表演。'],
  ['隨舞是甚麼時候？',`17:45–19:00。${external(ig+'p/DfO75xKDzuQ/','查看官方歌單')}`],
  ['舞臺表演時間表在哪裏？','請到<a class="text-link" href="stage.html">舞臺表演頁</a>查看各團體的演出時間。'],
  ['如何聯絡主辦？','Instagram：@acahku<br>WhatsApp：Johanna 6110 7676 / Derek 5409 2129'],
- ['可以再次入場嗎？','可以，參加者可憑手印再次入場，亦請保留門票供檢閱。'],
+ ['可以再次入場嗎？','可以，參加者可於 18:00 前憑手印再次入場，亦請保留門票供檢閱。'],
  ['遺失或拾獲物品怎麼辦？','請到官方攤位查詢或登記；活動後可留意 @acahku 的失物認領帖文。'],
  ['哪裏可以查看平面圖及守則？','請到<a class="text-link" href="map.html">場地地圖</a>、<a class="text-link" href="cosplayer-rules.html">Cosplayer 守則</a>及<a class="text-link" href="participants-regulations.html">參加者守則</a>頁。'],
  ['可以電郵查詢嗎？','可以：<a class="text-link" href="mailto:hkuaca.shimotsukicon@gmail.com">hkuaca.shimotsukicon@gmail.com</a>']
 ];
 const faqEn=[
- ['When and where is it?','15 Nov 2026 (Sun), 12:00–20:00. AquaBeat 03, Kwun Tong Promenade, 86 Hoi Bun Road.'],
+ ['When and where is it?','15 Nov 2026 (Sun), 12:00–19:00. AquaBeat 03, Kwun Tong Promenade, 86 Hoi Bun Road.'],
  ['How much are tickets?',`HK$50 online; HK$60 on the day. ${external(ticket,'Book on Art-mate')}`],
  ['When does online booking close?','14 Nov at 23:59. The HK$40 early-bird offer ended on 18 Oct.'],
- ['What is the last entry time?','19:00, one hour before the event ends.'],
+ ['What is the last entry time?','On-site ticket sales and admission end at 18:00. The event closes at 19:00.'],
  ['Can non-HKU visitors attend?','Yes. The event is open to the public.'],
  ['Do I have to cosplay?','No. You are welcome to visit booths and enjoy the shows in everyday clothes.'],
  ['When is Random Play Dance?',`17:45–19:00. ${external(ig+'p/DfO75xKDzuQ/','See the official song list')}`],
  ['Where is the stage schedule?','See each performance time on the <a class="text-link" href="stage.html">Stage page</a>.'],
  ['How can I contact ACA?','Instagram: @acahku<br>WhatsApp: Johanna 6110 7676 / Derek 5409 2129'],
- ['Can I re-enter?','Yes, participants may re-enter with a hand stamp. Keep your ticket for inspection.'],
+ ['Can I re-enter?','Yes, participants may re-enter with a hand stamp before 18:00. Keep your ticket for inspection.'],
  ['What if I lose or find something?','Report it at the official booth. Check @acahku for lost-property collection posts after the event.'],
  ['Where are the floor plan and rules?','See the <a class="text-link" href="map.html">Map</a>, <a class="text-link" href="cosplayer-rules.html">Cosplayer Rules</a> and <a class="text-link" href="participants-regulations.html">Participants Regulations</a> pages.'],
  ['Can I email an enquiry?','Yes: <a class="text-link" href="mailto:hkuaca.shimotsukicon@gmail.com">hkuaca.shimotsukicon@gmail.com</a>']

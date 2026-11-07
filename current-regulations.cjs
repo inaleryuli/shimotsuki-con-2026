@@ -15,14 +15,14 @@ module.exports={cosplay:{zh:[
  ['Staff instructions',['Staff will ask anyone breaching the rules to correct their behaviour. Anyone who does not comply will be asked to leave the event area.']],
  ['Lost property',['Look after your belongings. Report lost or found items at the official booth.','Lost-property collection information will be posted on @acahku after the event. ACA accepts no liability for losses.']]
 ]},participants:{zh:[
- ['門票與再次入場',['入場後請保留門票，以便檢閱。','參加者可憑手印再次入場。']],
+ ['門票與再次入場',['入場後請保留門票，以便檢閱。','參加者可於 18:00 前憑手印再次入場。','現場售票及入場於 18:00 截止，活動於 19:00 結束。']],
  ['安全與整潔',['場內嚴禁吸煙，請保持場地整潔。','請勿攜帶危險物品進場，例如刀具、玻璃等利器。']],
  ['通道與舞臺',['請勿長時間在同一位置逗留或拍攝，以免造成阻塞。','請按場地指示觀賞表演，切勿過分貼近舞臺，以保障表演者及參加者安全。']],
  ['個人財物與現場秩序',['請保管自身財物及注意人身安全；本會對任何損失不負責任。','違反守則、破壞場地或滋擾他人者，本會有權要求其離場。']],
  ['現場協助',['如有疑問，請向本會工作人員查詢。']],
  ['守則說明',['本會保留以上守則的增修及最終解釋權。','中英文版本如有抵觸或不符，以中文版為準。']]
 ],en:[
- ['Tickets & re-entry',['Keep your ticket after admission for inspection.','Participants may re-enter with a hand stamp.']],
+ ['Tickets & re-entry',['Keep your ticket after admission for inspection.','Participants may re-enter with a hand stamp before 18:00.','On-site ticket sales and admission end at 18:00. The event closes at 19:00.']],
  ['Safety & cleanliness',['Smoking is strictly prohibited. Keep the venue clean.','Do not bring dangerous items, including knives, glass or other sharp objects.']],
  ['Walkways & stage',['Avoid staying or taking photos in the same place for an extended period if it causes obstruction.','Follow venue markings when watching performances. Do not stand too close to the stage, for everyone’s safety.']],
  ['Belongings & conduct',['Look after your belongings and personal safety. ACA accepts no liability for losses.','ACA may ask anyone who breaches the rules, damages the venue or disturbs others to leave.']],
