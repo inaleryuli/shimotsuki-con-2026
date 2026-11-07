@@ -11,6 +11,6 @@ Updated 7 November 2026. The organizer supplied the Chinese introduction, reques
 - [Floor-plan announcement](https://www.instagram.com/acahku/p/DfWtzwqPhtA/): the supplied floor plan is included as `assets/event/floor-plan.webp`, with the original PNG retained for zooming and opening separately.
 - [Society website](https://www.acabox.studsoc.hku.hk/): linked by the ACA website button on all eight pages.
 
-The organizer confirmed that on-site ticket sales and admission end at 18:00 and the event closes at 19:00. The website uses these times, which match the participants-regulation image and supersede the times in the earlier announcements.
+The organizer confirmed that the event runs from 12:00 to 20:00. On-site ticket sales and admission end at 18:00, and staff begin asking attendees to leave at 19:00.
 
 Contact details are repeated on the current official Instagram announcements: @acahku, hkuaca.shimotsukicon@gmail.com, Johanna 6110 7676 and Derek 5409 2129.

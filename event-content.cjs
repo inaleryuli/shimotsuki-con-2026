@@ -5,7 +5,7 @@ const sheets=items=>items.map((html,i)=>`<section class="content-sheet" data-she
 const paragraph=text=>`<p>${text}</p>`;
 const facts=en=>`<dl class="event-facts">
   <div><dt>${en?'Date':'日期'}</dt><dd>${en?'15 Nov 2026 (Sun)':'2026.11.15（日）'}</dd></div>
-  <div><dt>${en?'Time':'時間'}</dt><dd>12:00–19:00</dd></div>
+  <div><dt>${en?'Time':'時間'}</dt><dd>12:00–20:00</dd></div>
   <div><dt>${en?'Venue':'地點'}</dt><dd>${en?'AquaBeat 03, Kwun Tong Promenade':'觀塘海濱活動空間 03'}</dd></div>
   <div><dt>${en?'Tickets':'門票'}</dt><dd>${en?'HK$50 online · HK$60 on the day':'網上 HK$50 · 即日 HK$60'}</dd></div>
 </dl>${external(ticket,en?'Get tickets':'購票')}`;
@@ -33,10 +33,10 @@ const regulations=require('./current-regulations.cjs');
 const rulePages=(en,type='cosplay')=>sheets(regulations[type][en?'en':'zh'].map(([heading,items])=>`<h2>${heading}</h2><ul class="rule-list">${items.map(x=>`<li>${x}</li>`).join('')}</ul>`))+`<p class="source-note">${external(ig+'p/'+(type==='cosplay'?'DfT3xdLD_g8':'DfUMVTpj9ZD')+'/',en?'Official regulations':'官方守則')}</p>`;
 const floorPlan=en=>`<div class="floor-plan-content"><button class="floor-plan-button" data-open-map aria-label="${en?'Enlarge the floor plan':'放大場地平面圖'}"><img src="assets/event/floor-plan.webp" width="1080" height="1350" alt="${en?'Floor plan with booths, entrance, exit, stage and toilets':'場地平面圖：攤位、入口、出口、舞臺及洗手間'}"><span>${en?'Enlarge ＋':'放大查看 ＋'}</span></button><p class="map-address">${en?'AquaBeat 03 · 86 Hoi Bun Road':'觀塘海濱活動空間 03 · 觀塘海濱道 86 號'}</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=AquaBeat+03+86+Hoi+Bun+Road" target="_blank" rel="noopener">${en?'Open location ↗':'查看位置 ↗'}</a></div>`;
 const faqZh=[
- ['何時、在哪裏舉行？','2026年11月15日（日）12:00–19:00，觀塘海濱活動空間03，觀塘海濱道86號。'],
+ ['何時、在哪裏舉行？','2026年11月15日（日）12:00–20:00，觀塘海濱活動空間03，觀塘海濱道86號。'],
  ['門票多少錢？',`網上門票 HK$50；即日門票 HK$60。${external(ticket,'Art-mate 購票')}`],
  ['網上售票何時截止？','11月14日23:59截止。HK$40 早鳥優惠已於10月18日結束。'],
- ['最遲何時入場？','現場售票及入場於 18:00 截止，活動於 19:00 結束。'],
+ ['最遲何時入場？','現場售票及入場於 18:00 截止。工作人員將於 19:00 起請參加者離場，活動於 20:00 結束。'],
  ['不是港大學生也可以參加嗎？','可以。活動歡迎公眾參與。'],
  ['一定要 Cosplay 嗎？','不需要；歡迎以日常服裝到場逛攤位及欣賞表演。'],
  ['隨舞是甚麼時候？',`17:45–19:00。${external(ig+'p/DfO75xKDzuQ/','查看官方歌單')}`],
@@ -48,10 +48,10 @@ const faqZh=[
  ['可以電郵查詢嗎？','可以：<a class="text-link" href="mailto:hkuaca.shimotsukicon@gmail.com">hkuaca.shimotsukicon@gmail.com</a>']
 ];
 const faqEn=[
- ['When and where is it?','15 Nov 2026 (Sun), 12:00–19:00. AquaBeat 03, Kwun Tong Promenade, 86 Hoi Bun Road.'],
+ ['When and where is it?','15 Nov 2026 (Sun), 12:00–20:00. AquaBeat 03, Kwun Tong Promenade, 86 Hoi Bun Road.'],
  ['How much are tickets?',`HK$50 online; HK$60 on the day. ${external(ticket,'Book on Art-mate')}`],
  ['When does online booking close?','14 Nov at 23:59. The HK$40 early-bird offer ended on 18 Oct.'],
- ['What is the last entry time?','On-site ticket sales and admission end at 18:00. The event closes at 19:00.'],
+ ['What is the last entry time?','On-site ticket sales and admission end at 18:00. Staff begin asking attendees to leave at 19:00. The event ends at 20:00.'],
  ['Can non-HKU visitors attend?','Yes. The event is open to the public.'],
  ['Do I have to cosplay?','No. You are welcome to visit booths and enjoy the shows in everyday clothes.'],
  ['When is Random Play Dance?',`17:45–19:00. ${external(ig+'p/DfO75xKDzuQ/','See the official song list')}`],
